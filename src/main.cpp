@@ -5,6 +5,7 @@
 #include "text_processor.h"
 
 int main() {
+    try {
     TextProcessor processor;
     Engine engine;
 
@@ -51,5 +52,14 @@ int main() {
 
     std::cout << "number:\n" << engine.execute("number");
 
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Exception caught: " << e.what() << "\n";
+        return 1;
+    }
+    catch (...) {
+        std::cerr << "Unknown exception caught\n";
+        return 1;
+    }
     return 0;
 }
