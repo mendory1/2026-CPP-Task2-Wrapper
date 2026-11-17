@@ -3,6 +3,9 @@
 
 #include <functional>
 #include <map>
+#include <string>
+#include <stdexcept>
+#include "argument_dict.h"
 
 class Engine {
 public:

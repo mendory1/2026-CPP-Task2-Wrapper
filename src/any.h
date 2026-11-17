@@ -1,6 +1,11 @@
 #ifndef ANY_H
 #define ANY_H
 
+#include <memory>
+#include <string>
+#include <typeinfo>
+#include <stdexcept>
+
 class Any {
 public:
     Any() : m_type(&typeid(void)) {}

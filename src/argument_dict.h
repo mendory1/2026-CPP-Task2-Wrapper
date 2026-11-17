@@ -2,6 +2,8 @@
 #define ARGUMENT_DICT_H
 
 #include <map>
+#include <string>
+#include <initializer_list>
 #include "any.h"
 
 using ArgumentDict = std::map<std::string, Any>;

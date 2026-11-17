@@ -1,7 +1,10 @@
 #ifndef WRAPPER_H
 #define WRAPPER_H
 
+#include <string>
 #include <vector>
+#include <utility>
+#include <stdexcept>
 #include "argument_dict.h"
 
 template <typename TClass, typename TReturn, typename... TArgs>

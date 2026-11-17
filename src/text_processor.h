@@ -1,6 +1,11 @@
 #ifndef TEXT_PROCESSOR_H
 #define TEXT_PROCESSOR_H
 
+#include <string>
+#include <cctype>
+#include <sstream>
+#include <vector>
+
 class TextProcessor {
 public:
     std::string replaceWords(const std::string& text, const std::string& from, const std::string& to) {
